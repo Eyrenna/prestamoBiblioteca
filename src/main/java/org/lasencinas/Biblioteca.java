@@ -5,6 +5,9 @@ import java.util.Set;
 
 public class Biblioteca extends EntidadPublica {
     //Atributos
-    public Set<Personal> listaPersonal = new HashSet<>();
+    private String director = null;
+    private String codeAyunt = null;
+
+    public Set<Empleado> listaEmpleado = new HashSet<>();
     public Set<Miembro> listaMiembros = new HashSet<>();
 }

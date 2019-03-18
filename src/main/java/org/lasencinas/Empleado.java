@@ -1,14 +1,16 @@
 package org.lasencinas;
 
-public class Personal {
+public class Empleado {
     //Atributos
+
+
     private String dni = null;
     private String nombre = null;
     private String primerApellido = null;
     private String segundoApellido = null;
 
     //constructor
-    public Personal(String dni) {
+    public Empleado(String dni) {
         this.dni = dni;
     }
 
