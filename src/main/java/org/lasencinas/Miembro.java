@@ -1,52 +1,36 @@
 package org.lasencinas;
 
-public class Miembro {
+public class Miembro extends Persona {
+
     //Atributos
-    private String dni = null;
-    private String nombre = null;
-    private String primerApellido = null;
-    private String segundoApellido = null;
+
+    private String codeMiembro = null;
+    private Biblioteca biblioteca = null;
 
     //constructor
-    public Miembro(String dni) {
-        this.dni = dni;
-    }
 
+    public Miembro(String codeMiembro, Biblioteca biblioteca) {
+        this.codeMiembro = codeMiembro;
+        this.biblioteca = biblioteca;
+    }
 
     //Setters
 
-    public void setDni(String dni) {
-        this.dni = dni;
+    public void setCodeMiembro(String codeMiembro) {
+        this.codeMiembro = codeMiembro;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setBiblioteca(Biblioteca biblioteca) {
+        this.biblioteca = biblioteca;
     }
-
-    public void setPrimerApellido(String primerApellido) {
-        this.primerApellido = primerApellido;
-    }
-
-    public void setSegundoApellido(String segundoApellido) {
-        this.segundoApellido = segundoApellido;
-    }
-
 
     //Getters
 
-    public String getDni() {
-        return dni;
+    public String getCodeMiembro() {
+        return codeMiembro;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getPrimerApellido() {
-        return primerApellido;
-    }
-
-    public String getSegundoApellido() {
-        return segundoApellido;
+    public Biblioteca getBiblioteca() {
+        return biblioteca;
     }
 }

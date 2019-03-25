@@ -9,11 +9,14 @@ public class EntidadPublica {
 
     //Constructor
 
-    public EntidadPublica(String code) {
-        this.code = code;
+    public EntidadPublica() {
     }
 
     //Seters
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -30,10 +33,10 @@ public class EntidadPublica {
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public String getDireccion() {
-        return direccion;
+        return this.direccion;
     }
 }

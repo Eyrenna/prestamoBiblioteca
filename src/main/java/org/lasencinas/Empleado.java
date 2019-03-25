@@ -1,54 +1,36 @@
 package org.lasencinas;
 
 public class Empleado {
+
     //Atributos
 
-
-    private String dni = null;
-    private String nombre = null;
-    private String primerApellido = null;
-    private String segundoApellido = null;
+    private String codeEmpleado = null;
+    private Biblioteca biblioteca = null;
 
     //constructor
-    public Empleado(String dni) {
-        this.dni = dni;
-    }
 
+    public Empleado(String codeEmpleado, Biblioteca biblioteca) {
+        this.codeEmpleado = codeEmpleado;
+        this.biblioteca = biblioteca;
+    }
 
     //Setters
 
-    public void setDni(String dni) {
-        this.dni = dni;
+    public void setCodeEmpleado(String codeEmpleado) {
+        this.codeEmpleado = codeEmpleado;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setBiblioteca(Biblioteca biblioteca) {
+        this.biblioteca = biblioteca;
     }
-
-    public void setPrimerApellido(String primerApellido) {
-        this.primerApellido = primerApellido;
-    }
-
-    public void setSegundoApellido(String segundoApellido) {
-        this.segundoApellido = segundoApellido;
-    }
-
 
     //Getters
 
-    public String getDni() {
-        return dni;
+    public String getCodeEmpleado() {
+        return codeEmpleado;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getPrimerApellido() {
-        return primerApellido;
-    }
-
-    public String getSegundoApellido() {
-        return segundoApellido;
+    public Biblioteca getBiblioteca() {
+        return biblioteca;
     }
 }
