@@ -9,6 +9,6 @@ public class Ejemplar {
 
     private String editorial = null;
     private String titulo = null;
-    private Set<Copia> listaCopias = new HashSet<>();
+    private Set<Libro> listaCopias = new HashSet<>();
 
 }
